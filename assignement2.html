@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--Browser used for testing was chrome on macos-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link href="assignement2.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="centre">
+        
+        <div class="shelf1">
+            <button onclick="buttonPressed(event.currentTarget)" type="button" class="gameButton red-button"></button> <!--Onlick function returns the element to our js function-->
+            <button onclick="buttonPressed(event.currentTarget)" type="button" class="gameButton blue-button"></button>
+        </div>
+        <span id="left">0</span>
+        <div style="display: inline;">
+            <button onclick="await()" type="button" id="start">START</button>
+        </div>
+        <span id="right">0</span>
+        <div class="status"></div>
+        <div class="shelf2">
+            <button onclick="buttonPressed(event.currentTarget)" type="button" class="gameButton green-button"></button>
+            <button onclick="buttonPressed(event.currentTarget)" type="button" class="gameButton yellow-button"></button>
+        </div>
+
+
+
+
+    </div>
+</body>
+<script src="assignement2.js"></script>
+</html>
